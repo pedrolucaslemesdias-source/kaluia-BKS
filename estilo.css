@@ -1,0 +1,189 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 15px 30px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #005fa3;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('img/banner-bike.jpg') no-repeat center center/cover;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  letter-spacing: 1px;
+}
+
+/* Títulos */
+.section-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #0077cc;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Parágrafos */
+.lead {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Botões */
+button, .btn {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Página de Contato */
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.contact-form .form-group label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccd1d9;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.contact-form .form-control:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 0 3px rgba(0,119,204,0.2);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    padding: 25px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+}
+
